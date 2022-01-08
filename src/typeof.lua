@@ -14,7 +14,7 @@ end;
 
 --- Initialization ---
 for _, name in pairs(Types) do
-	TypeInternal[name] = newproxy();
+	TypeInternal[name] = newproxy(name);
 end;
 
 Adorn('callback', function(userdata, var)
